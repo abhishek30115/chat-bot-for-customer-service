@@ -1,0 +1,33 @@
+print("Customer Service Chatbot")
+print("Type 'bye' to exit.\n")
+
+while True:
+    user = input("You: ").lower()
+
+    if user == "bye":
+        print("Bot: Thank you for contacting us. Have a great day!")
+        break
+
+    elif "hello" in user or "hi" in user:
+        print("Bot: Hello! How can I help you today?")
+
+    elif "order" in user:
+        print("Bot: Please provide your Order ID to check your order status.")
+
+    elif "refund" in user:
+        print("Bot: Refunds are processed within 5-7 business days.")
+
+    elif "payment" in user:
+        print("Bot: We accept UPI, Credit Card, Debit Card, and Net Banking.")
+
+    elif "delivery" in user:
+        print("Bot: Standard delivery takes 3-5 business days.")
+
+    elif "contact" in user:
+        print("Bot: You can contact us at support@example.com or call +91-9876543210.")
+
+    elif "thanks" in user or "thank you" in user:
+        print("Bot: You're welcome! Happy to help.")
+
+    else:
+        print("Bot: Sorry, I didn't understand your question. Please try again.")
